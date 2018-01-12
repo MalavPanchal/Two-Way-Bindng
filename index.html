@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html ng-app= "root">
+
+
+ <head>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
+      <script src="angular.js"></script>
+
+	  <title>Two way binding</title>
+ </head>
+
+
+   <body>
+
+			<div ng-controller = "index">
+
+				<div>
+					Favourite Word:<input type="text" ng-model="FavWord">  {{FavWord}}
+
+				</div>
+
+				<div>
+					Favorite Color:
+		                           <input type="radio" name="fc" value="Red" ng-model="FavColor">Red</input>
+								   <input type="radio" name="fc" value="Green" ng-model="FavColor">Green</input>
+								   <input type="radio" name="fc" value="Yellow" ng-model="FavColor">Yellow</input>
+								   <input type="radio" name="fc" value="Blue" ng-model="FavColor">Blue</input> ----{{FavColor}}
+
+				</div>
+
+				<div>
+					Favorite Shape:
+						           <select ng-model="FavShape">
+										<option value="Circle" ng-model="FavShape">Circle</option>
+										<option value="Triangle" ng-model="FavShape">Triangle</option>
+										<option value="Square" ng-model="FavShape">Square</option>
+
+								   </select> ----{{FavShape}}
+				</div>
+
+
+			</div>
+
+   </body>
+</html>
